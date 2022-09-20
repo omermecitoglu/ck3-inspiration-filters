@@ -260,8 +260,8 @@ types RoyalCourtTypes
 					layoutpolicy_vertical = expanding
 
 					button_round = {
-						datacontext = "[GetScriptedGui('inspiration_filters_toggle_menu_visibility')]"
-						onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+						datacontext = "[GetVariableSystem]"
+						onclick = "[VariableSystem.Toggle( 'inspiration_filters_is_menu_visible' )]"
 						tooltip = "filters_menu_header_text"
 		
 						button_inspiration_filters = {

@@ -11,8 +11,8 @@ window = {
 	using = Window_Decoration
 	using = Window_Movable
 
-	datacontext = "[GetScriptedGui('inspiration_filters_toggle_menu_visibility')]"
-	visible = "[ScriptedGui.IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+	datacontext = "[GetVariableSystem]"
+	visible = "[GetVariableSystem.Exists( 'inspiration_filters_is_menu_visible' )]"
 
 	vbox = {
 		using = Window_Margins
@@ -27,8 +27,8 @@ window = {
 
 			blockoverride "button_close"
 			{
-				datacontext = "[GetScriptedGui('inspiration_filters_toggle_menu_visibility')]"
-				onclick = "[ScriptedGui.Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				datacontext = "[GetVariableSystem]"
+				onclick = "[VariableSystem.Toggle( 'inspiration_filters_is_menu_visible' )]"
 			}
 		}
 

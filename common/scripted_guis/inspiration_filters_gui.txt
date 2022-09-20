@@ -1,22 +1,4 @@
-﻿inspiration_filters_toggle_menu_visibility = {
-	scope = character
-	is_shown = {
-		has_variable = is_inspiration_filters_menu_visible
-	}
-	effect = {
-		if = {
-			limit = {
-				has_variable = is_inspiration_filters_menu_visible
-			}
-			remove_variable = is_inspiration_filters_menu_visible
-		}
-		else = {
-			set_variable = is_inspiration_filters_menu_visible
-		}
-	}
-}
-
-inspiration_filters_toggle_level_1_inspirations = {
+﻿inspiration_filters_toggle_level_1_inspirations = {
 	scope = character
 	is_shown = {
 		NOT = {
