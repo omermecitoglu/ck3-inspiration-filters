@@ -1,0 +1,97 @@
+﻿inspiration_filters_toggle_menu_visibility = {
+	scope = character
+	is_shown = {
+		has_variable = is_inspiration_filters_menu_visible
+	}
+	effect = {
+		if = {
+			limit = {
+				has_variable = is_inspiration_filters_menu_visible
+			}
+			remove_variable = is_inspiration_filters_menu_visible
+		}
+		else = {
+			set_variable = is_inspiration_filters_menu_visible
+		}
+	}
+}
+
+inspiration_filters_toggle_level_1_inspirations = {
+	scope = character
+	is_shown = {
+		NOT = {
+			has_global_variable = ignore_level_1_inspirations
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				has_global_variable = ignore_level_1_inspirations
+			}
+			remove_global_variable = ignore_level_1_inspirations
+		}
+		else = {
+			set_global_variable = ignore_level_1_inspirations
+		}
+	}
+}
+
+inspiration_filters_toggle_level_2_inspirations = {
+	scope = character
+	is_shown = {
+		NOT = {
+			has_global_variable = ignore_level_2_inspirations
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				has_global_variable = ignore_level_2_inspirations
+			}
+			remove_global_variable = ignore_level_2_inspirations
+		}
+		else = {
+			set_global_variable = ignore_level_2_inspirations
+		}
+	}
+}
+
+inspiration_filters_toggle_level_3_inspirations = {
+	scope = character
+	is_shown = {
+		NOT = {
+			has_global_variable = ignore_level_3_inspirations
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				has_global_variable = ignore_level_3_inspirations
+			}
+			remove_global_variable = ignore_level_3_inspirations
+		}
+		else = {
+			set_global_variable = ignore_level_3_inspirations
+		}
+	}
+}
+
+inspiration_filters_toggle_level_4_inspirations = {
+	scope = character
+	is_shown = {
+		NOT = {
+			has_global_variable = ignore_level_4_inspirations
+		}
+	}
+	effect = {
+		if = {
+			limit = {
+				has_global_variable = ignore_level_4_inspirations
+			}
+			remove_global_variable = ignore_level_4_inspirations
+		}
+		else = {
+			set_global_variable = ignore_level_4_inspirations
+		}
+	}
+}
