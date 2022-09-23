@@ -77,3 +77,36 @@ inspiration_filters_toggle_level_4_inspirations = {
 		}
 	}
 }
+
+inspiration_filters_potential_inspirations = {
+	scope = character
+	is_shown = {
+		always = yes
+	}
+	is_valid = {
+		has_dlc_feature = royal_court
+		has_royal_court = yes
+	}
+	effect = {
+		clear_variable_list = potential_inspirations
+		every_courtier_or_guest = {
+			limit = {
+				exists = inspiration
+				has_completed_inspiration = no
+				inspiration = {
+					NOT = { exists = inspiration_sponsor }
+				}
+				inspiration_filters_injection = yes
+			}
+
+			inspiration = {
+				root = {
+					add_to_variable_list = {
+						name = potential_inspirations
+						target = prev
+					}
+				}
+			}
+		}
+	}
+}

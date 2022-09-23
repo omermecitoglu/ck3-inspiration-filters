@@ -292,12 +292,22 @@ types RoyalCourtTypes
 				direction = vertical
 				visible = "[RoyalCourtWindow.GetCharacter.IsLocalPlayer]"
 				name = "potential_inspirations"
-				datamodel = "[InspirationsWindow.GetPotentialInspirations]"
+				# datamodel = "[InspirationsWindow.GetPotentialInspirations]"
+				datamodel = "[RoyalCourtWindow.GetCharacter.MakeScope.GetList('potential_inspirations')]"
 				spacing = 5
+
+				state = {
+					name = update_potential_inspirations
+					next = update_potential_inspirations
+					trigger_when = "[GetScriptedGui('inspiration_filters_potential_inspirations').IsShown( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+					duration = 0.1
+					on_start = "[GetScriptedGui('inspiration_filters_potential_inspirations').Execute( GuiScope.SetRoot( GetPlayer.MakeScope ).End )]"
+				}
 
 				item = {
 					flowcontainer_inspiration_list_item = {
 						name = "inspiration_item"
+						datacontext = "[Scope.Inspiration]"
 					}
 				}
 			}
