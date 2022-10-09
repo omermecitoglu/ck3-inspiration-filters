@@ -264,7 +264,7 @@ types RoyalCourtTypes
 						onclick = "[VariableSystem.Toggle( 'inspiration_filters_is_menu_visible' )]"
 						tooltip = "filters_menu_header_text"
 		
-						button_inspiration_filters = {
+						btn_icon_list_check = {
 							parentanchor = center
 							size = { 20 20 }
 							alwaystransparent = yes
