@@ -2,18 +2,18 @@
 	scope = character
 	is_shown = {
 		NOT = {
-			has_global_variable = ignore_level_1_inspirations
+			has_character_flag = ignore_level_1_inspirations
 		}
 	}
 	effect = {
 		if = {
 			limit = {
-				has_global_variable = ignore_level_1_inspirations
+				has_character_flag = ignore_level_1_inspirations
 			}
-			remove_global_variable = ignore_level_1_inspirations
+			remove_character_flag = ignore_level_1_inspirations
 		}
 		else = {
-			set_global_variable = ignore_level_1_inspirations
+			add_character_flag = ignore_level_1_inspirations
 		}
 	}
 }
@@ -22,18 +22,18 @@ inspiration_filters_toggle_level_2_inspirations = {
 	scope = character
 	is_shown = {
 		NOT = {
-			has_global_variable = ignore_level_2_inspirations
+			has_character_flag = ignore_level_2_inspirations
 		}
 	}
 	effect = {
 		if = {
 			limit = {
-				has_global_variable = ignore_level_2_inspirations
+				has_character_flag = ignore_level_2_inspirations
 			}
-			remove_global_variable = ignore_level_2_inspirations
+			remove_character_flag = ignore_level_2_inspirations
 		}
 		else = {
-			set_global_variable = ignore_level_2_inspirations
+			add_character_flag = ignore_level_2_inspirations
 		}
 	}
 }
@@ -42,18 +42,18 @@ inspiration_filters_toggle_level_3_inspirations = {
 	scope = character
 	is_shown = {
 		NOT = {
-			has_global_variable = ignore_level_3_inspirations
+			has_character_flag = ignore_level_3_inspirations
 		}
 	}
 	effect = {
 		if = {
 			limit = {
-				has_global_variable = ignore_level_3_inspirations
+				has_character_flag = ignore_level_3_inspirations
 			}
-			remove_global_variable = ignore_level_3_inspirations
+			remove_character_flag = ignore_level_3_inspirations
 		}
 		else = {
-			set_global_variable = ignore_level_3_inspirations
+			add_character_flag = ignore_level_3_inspirations
 		}
 	}
 }
@@ -62,18 +62,18 @@ inspiration_filters_toggle_level_4_inspirations = {
 	scope = character
 	is_shown = {
 		NOT = {
-			has_global_variable = ignore_level_4_inspirations
+			has_character_flag = ignore_level_4_inspirations
 		}
 	}
 	effect = {
 		if = {
 			limit = {
-				has_global_variable = ignore_level_4_inspirations
+				has_character_flag = ignore_level_4_inspirations
 			}
-			remove_global_variable = ignore_level_4_inspirations
+			remove_character_flag = ignore_level_4_inspirations
 		}
 		else = {
-			set_global_variable = ignore_level_4_inspirations
+			add_character_flag = ignore_level_4_inspirations
 		}
 	}
 }

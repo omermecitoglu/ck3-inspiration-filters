@@ -61,25 +61,25 @@ inspiration_filters_injection = {
 	OR = {
 		AND = {
 			NOT = {
-				has_global_variable = ignore_level_1_inspirations
+				has_character_flag = ignore_level_1_inspirations
 			}
 			can_forge_decent_artifact = yes
 		}
 		AND = {
 			NOT = {
-				has_global_variable = ignore_level_2_inspirations
+				has_character_flag = ignore_level_2_inspirations
 			}
 			can_forge_competent_artifact = yes
 		}
 		AND = {
 			NOT = {
-				has_global_variable = ignore_level_3_inspirations
+				has_character_flag = ignore_level_3_inspirations
 			}
 			can_forge_masterful_artifact = yes
 		}
 		AND = {
 			NOT = {
-				has_global_variable = ignore_level_4_inspirations
+				has_character_flag = ignore_level_4_inspirations
 			}
 			can_forge_legendary_artifact = yes
 		}
