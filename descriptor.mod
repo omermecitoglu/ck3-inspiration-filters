@@ -5,5 +5,5 @@ tags={
 	"Utilities"
 }
 name="Inspiration Filters"
-supported_version="1.7.*"
+supported_version="1.8.*"
 remote_file_id="2865317084"
